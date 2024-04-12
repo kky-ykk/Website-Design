@@ -1,0 +1,174 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    height: 32px;
+    margin-right: 32px;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav li {
+    margin-bottom: 8px;
+    margin : 0px 6px;
+  }
+  
+  .nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav a:hover {
+    color: #007bff;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search {
+    margin-right: 16px;
+  }
+  
+  .search input {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .bag {
+    margin-right: 16px;
+  }
+/*   
+  .bag img {
+    height: 24px;
+  } */
+  
+  .profile {
+    margin-right: 0;
+    margin-right: 16px;
+  }
+  
+  .profile img {
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  .upload button{
+    margin-right: 5px;
+    background-color: #ea4b8a;
+    padding: 8px;
+    border-style: none;
+    border-radius: 5px;
+    margin-left: 7px;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 16px;
+    }
+  
+    .nav {
+      margin-bottom: 16px;
+    }
+  
+    .nav ul {
+      flex-direction: row;
+    }
+  
+    .nav li {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  
+    .rightSection {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search,
+    .bag,
+    .profile {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* --------------------------- */
+
+  .container{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .mailStyle {
+    height: 90px;
+    width: 90px;
+    color: #ea4b8a;
+  }
+
+.mailVerify{
+    text-align: center;
+    padding: 20px 70px;
+}
+
+/* footer */
+
+.socialMedia{
+    width: 250px;
+}
+
+.mainFooter{
+    justify-content: space-around;
+    color: #6d7373;
+    background-color: #fffbfb;
+}
+
+.footerContainer{
+    padding: 30px 40px;
+    display: flex;
+    
+}
+
+.footerContainer li{
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomFooter{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

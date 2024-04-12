@@ -1,0 +1,103 @@
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffefd5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.selected {
+    border: 2px solid #ea4c89;
+  }
+  
+  .card.selected .cardImage {
+    transform: translateY(-10px);
+  }
+  
+  .cardImage {
+    max-width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .radioButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .radioButton.selected {
+    background-color: #ea4c89;
+  }
+  
+  .radioButton.selected::before {
+    content: "✓";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .finishButton {
+    background-color: #ea4c89;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 40px;
+  }
+  
+  .finishButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  
